@@ -340,36 +340,39 @@
   </div>
 </section>
 
+<section class="relative min-h-[70vh] md:min-h-screen  overflow-hidden">
 
-<section class="relative" >
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-110 -z-10"
+  >
+    <source src="./assets/video/video-project2.mp4" type="video/mp4">
+  </video>
 
-<video loop autoplay
-        class="w-full h-full object-cover filter grayscale contrast-110 ">
-      <source src="./assets/video/video-project2.mp4" type="video/mp4">
-      <!-- <source src="video.webm" type="video/webm"> -->
-</video>
-
+  <!-- overlays -->
   <div class="absolute inset-0 bg-black/45"></div>
   <div class="absolute inset-0 bg-gradient-to-r from-darknavy via-darknavy/80 to-transparent"></div>
 
- <!-- CTA content -->
-  <div class="absolute inset-0 flex flex-col justify-center md:items-start px-8 md:px-20 text-offwhite z-10">
-    <h2 class="text-xl text-center mt-8 md:mt-0 md:text-left md:max-w-2xl md:text-7xl font-custom1 mb-4 leading-relaxed">
+  <!-- CTA content -->
+  <div class="relative z-10 flex flex-col justify-center md:items-start px-8 pt-10 md:px-20 md:py-20 md:mt-32 text-offwhite">
+    <h2 class="text-2xl text-center mt-24 md:mt-0 md:text-left md:max-w-2xl md:text-7xl font-custom1 mb-4 leading-relaxed">
       Let&apos;s work <span class="text-gold">together</span>
-        to bring your projects to <span class="text-gold">life</span>
+      to bring your projects to <span class="text-gold">life</span>
     </h2>
-
-   
   </div>
 
 </section>
+
 
  <footer class="container mx-auto max-w-screen-xl px-8 md:px-16 pt-16 md:pt-24 bg-darknavy text-offwhite">
   <div class="max-w-7xl mx-auto px-6 py-12 text-center">
     
     <!-- Logo -->
     <div class="mb-8">
-      <img src="/images/logo-and-icons/afppm-logo1.png"
+      <img src="./images/logo-and-icons/afppm-logo1.png"
            alt="Company logo"
            class="mx-auto h-24">
     </div>
