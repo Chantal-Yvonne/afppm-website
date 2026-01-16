@@ -16,19 +16,6 @@
     });
   }
 
-// change nav color on scroll
-
-  let navbar = document.getElementById('navbar');
-
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 80) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-
-
 // SLIDER
 $('.services-slide').slick({
   slidesToShow: 2,
@@ -41,7 +28,10 @@ $('.services-slide').slick({
         {
           breakpoint: 1024, // For tablets
           settings: {
-            slidesToShow: 1
+            slidesToShow: 1,
+              slidesToScroll: 1,
+              
+
           }
         },
         {
@@ -54,7 +44,6 @@ $('.services-slide').slick({
         }
       ]
     });
-
 
 
   $('.custom-prev').click(function() {
